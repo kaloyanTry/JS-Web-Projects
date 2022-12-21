@@ -21,6 +21,7 @@ function complete() {
 
 function newQuote() {
   loading();
+  
   // Pick a random quote from apiQuotes array:
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
   // console.log(quote);
@@ -37,7 +38,6 @@ function newQuote() {
   }
 
   // Set Quote, hide Loader:
-
   quoteText.textContent = quote.text;
   complete();
 }
@@ -56,14 +56,12 @@ async function getQuotes() {
 }
 
 // Twitter Quote
-
 function tweetQuote() {
   const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
   window.open(twitterUrl, '_blank');
 }
 
 // Event Listenrs
-
 newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweetQuote);
 
