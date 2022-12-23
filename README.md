@@ -3,4 +3,4 @@
 Here is an overview and links to the all web projects:
 
 1. Quote-Generator-WebApp - [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/QuoteGeneratorApp)
-2. Infinite-Scroll-Website -[link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/InfiniteScroll)
+2. Infinite-Scroll-Website - [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/InfiniteScroll)
