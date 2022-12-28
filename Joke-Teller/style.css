@@ -37,15 +37,15 @@ body {
   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+#button:hover {
   filter: brightness(95%);
 }
 
-button:active {
+#button:active {
   transform: scale(0.98);
 }
 
-button:disabled {
+#button:disabled {
   cursor: default;
   filter: brightness(30%);
 }
