@@ -45,7 +45,7 @@ section {
 h1 {
   font-size: 100px;
   font-family: 'Kaushan Script', sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -55,7 +55,7 @@ h2 {
 }
 
 /* Navigation */
-nav {
+.nav {
   z-index: 10;
   position: fixed;
   font-family: 'Oswald', sans-serif;
@@ -64,6 +64,7 @@ nav {
   padding: 25px;
   width: 100vw;
   background: rgb(255 255 255 / 50%);
+  text-transform: uppercase;
 }
 
 a {

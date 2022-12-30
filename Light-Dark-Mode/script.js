@@ -1,5 +1,5 @@
 const toggleSwitch = document.querySelector('input[type="checkbox"]');
-const nav = document.getElementById('nav');
+const nav = document.querySelector('.nav');
 const toggleIcon = document.getElementById('toggle-icon');
 const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
@@ -8,7 +8,7 @@ const textBox = document.getElementById('text-box');
 const DARK_MODE = 'dark';
 const LIGHT_MODE = 'light';
 
-// Images Mode:
+// Images Mode - change the images mode sorce (light to dark):
 function imageMode(color) {
   image1.src = `img/undraw_proud_coder_${color}.svg`;
   image2.src = `img/undraw_feeling_proud_${color}.svg`;
@@ -49,7 +49,6 @@ toggleSwitch.addEventListener('change', switchTheme);
 
 // Check a localStorage for theme:
 const currentTheme = localStorage.getItem('theme');
-
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
 
