@@ -4,8 +4,9 @@ Here is an overview and links to my coding versions of all web projects:
 
 1. Quote-Generator-WebApp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/QuoteGeneratorApp)
 2. Infinite-Scroll-Website: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/InfiniteScroll)
-3. Picture-In-Picture: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Picture-In-Picture)
+3. Picture-In-Picture-App: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Picture-In-Picture)
 4. Joke-Teller-WebApp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Joke-Teller)
 5. Light-Dark-Mode-Website: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Light-Dark-Mode)
+6. Animated-Template-Website: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Animated-Template)
 
 
