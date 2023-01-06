@@ -10,5 +10,5 @@ Here is an overview and links to my coding versions of all web projects:
 6. Animated-Template-Website: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Animated-Template)
 7. Animated-Navigaiton-Website: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Animated-Navigation)
 8. Music-Player-App: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Music-Player)
-9. Custom-Countdown-WebAPp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Custom-Countdown)
+9. Custom-Countdown-WebAPp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Custom-Countdown))
 10.Book-Keeper-WebApp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Book-Keeper)
