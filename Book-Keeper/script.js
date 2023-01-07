@@ -15,9 +15,11 @@ function showModal() {
 }
 
 modalShow.addEventListener('click', showModal);
+
 modalClose.addEventListener('click', () =>
   modal.classList.remove('show-modal')
 );
+
 window.addEventListener('click', (e) =>
   e.target === modal ? modal.classList.remove('show-modal') : false
 );
@@ -46,7 +48,6 @@ function buildBookmarks() {
 
   bookmarks.forEach((bookmark) => {
     const { name, url } = bookmark;
-
     // Create an Item
     const item = document.createElement('div');
     item.classList.add('item');
@@ -70,7 +71,6 @@ function buildBookmarks() {
     link.setAttribute('href', `${url}`);
     link.setAttribute('target', '_blank');
     link.textContent = name;
-
     //Append to bookmarks container
     linkInfo.append(favicon, link);
     item.append(closeIcon, linkInfo);
@@ -91,7 +91,6 @@ function fetchBookmarks() {
     ];
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   }
-
   buildBookmarks();
 }
 
@@ -111,6 +110,7 @@ function storeBookmark(e) {
   e.preventDefault();
   const nameValue = websiteNameEl.value;
   let urlValue = websiteUrlEl.value;
+
   if (!urlValue.includes('https://') && !urlValue.includes('http://')) {
     urlValue = `https://${urlValue}`;
   }
@@ -118,7 +118,6 @@ function storeBookmark(e) {
   if (!validate(nameValue, urlValue)) {
     return false;
   }
-  //validate(nameValue, urlValue);
 
   const bookmark = {
     name: nameValue,
@@ -133,5 +132,4 @@ function storeBookmark(e) {
 }
 
 bookmarkForm.addEventListener('submit', storeBookmark);
-
 fetchBookmarks();
