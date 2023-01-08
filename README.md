@@ -12,4 +12,5 @@ Here is an overview and links to my coding versions of all web projects:
 8. Music-Player-App: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Music-Player)
 9. Custom-Countdown-WebAPp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Custom-Countdown)
 10. Book-Keeper-WebApp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Book-Keeper)
-11. Video-Player-App:
+11. Video-Player-App: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Video-Player-App)
+12.
