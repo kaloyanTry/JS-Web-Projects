@@ -28,11 +28,7 @@ function togglePlay() {
   }
 }
 
-video.addEventListener('ended', showPlayIcon);
-
 // Progress Bar ---------------------------------- //
-
-// Calculate display time format
 function displayTime(time) {
   const minutes = Math.floor(time / 60);
   let seconds = Math.floor(time % 60);
@@ -41,14 +37,12 @@ function displayTime(time) {
   return `${minutes}:${seconds}`;
 }
 
-// Update progressbar
 function updateProgress() {
   progressBar.style.width = `${(video.currentTime / video.duration) * 100}%`;
   currentTime.textContent = `${displayTime(video.currentTime)} /`;
   duration.textContent = `${displayTime(video.duration)} /`;
 }
 
-// CLick to seek
 function setProgress(e) {
   const newTime = e.offsetX / progressRange.offsetWidth;
   progressBar.style.width = `${newTime * 100}%`;
@@ -56,7 +50,6 @@ function setProgress(e) {
 }
 
 // Volume Controls --------------------------- //
-
 let lastVolume = 1;
 
 function changeVolume(e) {
@@ -101,13 +94,11 @@ function toggleMute() {
 }
 
 // Change Playback Speed -------------------- //
-
 function changeSpeed() {
   video.playbackRate = speed.value;
 }
 
 // Fullscreen ------------------------------- //
-
 function openFullscreen(elem) {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -137,12 +128,7 @@ function closeFullscreen() {
 let fullscreen = false;
 
 function toggleFullscreen() {
-  if (!fullscreen) {
-    openFullscreen(player);
-  } else {
-    closeFullscreen();
-  }
-
+  !fullscreen ? openFullscreen(player) : closeFullscreen();
   fullscreen = !fullscreen;
 }
 
@@ -150,6 +136,7 @@ playBtn.addEventListener('click', togglePlay);
 video.addEventListener('click', togglePlay);
 video.addEventListener('timeupdate', updateProgress);
 video.addEventListener('canplay', updateProgress);
+video.addEventListener('ended', showPlayIcon);
 progressRange.addEventListener('click', setProgress);
 volumeRange.addEventListener('click', changeVolume);
 volumeIcon.addEventListener('click', toggleMute);
