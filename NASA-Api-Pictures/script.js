@@ -13,7 +13,9 @@ let resultsArray = [];
 let favorites = {};
 
 function showContent(page) {
+  // Show new content on the top:
   window.scrollTo({ top: 0, behavior: 'instant' });
+
   if (page === 'results') {
     resultsNav.classList.remove('hidden');
     favoritesNav.classList.add('hidden');
