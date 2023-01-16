@@ -16,4 +16,5 @@ Here is an overview and links to my coding versions of all web projects:
 12. Form-Validator: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Form-Validator)
 13. Spock-Rock-Game: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Spock-Rock-Game)
 14. NASA-Api-Pictures:[link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/NASA-Api-Pictures)
-15.
+15. Math-Speed-Game: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Math-Speed-Game}
+16.
