@@ -30,7 +30,7 @@ body {
   position: relative;
   background: rgba(255, 255, 255, 0.5);
   user-select: none;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .header {
@@ -109,7 +109,7 @@ label {
 }
 
 .selection-footer {
-  top: 134px;
+  top: 84px;
 }
 
 /* Game Page -------------------------- */
