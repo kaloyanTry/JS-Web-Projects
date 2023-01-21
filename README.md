@@ -18,6 +18,6 @@ Here is an overview and links to my coding versions of all web projects:
 14. NASA-Api-Pictures:[link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/NASA-Api-Pictures)
 15. Math-Speed-Game: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Math-Speed-Game)
 16. Drag-And-Drop-WebApp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Drag-And-Drop-WebApp)
-17. Calculator-WebApp: 
+17. Calculator-WebApp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Calculator-WebApp)
 18. Splash-Webpage:
 19. Paint-Clone-App:
