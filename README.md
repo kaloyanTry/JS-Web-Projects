@@ -21,3 +21,4 @@ Here is an overview and links to my coding versions of all web projects:
 17. Calculator-WebApp: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Calculator-WebApp)
 18. Splash-Webpage: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Splash-Page-Website)
 19. Paint-Clone-App: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Paint-Clone-App)
+20. Ping-Pong-Game-App: [link](https://github.com/kaloyanTry/JS-Web-Projects/tree/main/Ping-Pong-App)
