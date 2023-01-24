@@ -10,7 +10,7 @@ async function selectMediaStream() {
       videoElement.play();
     };
   } catch (err) {
-    //Catch the error
+    //Catch the error, if any
     console.log('whoops, error here:', err);
   }
 }
