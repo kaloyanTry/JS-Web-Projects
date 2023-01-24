@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  background: #45badd;
+  background: #75c7e0;
 }
 
 .container {
@@ -31,7 +31,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   color: white;
-  background: #ff3482;
+  background: #040278;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
