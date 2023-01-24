@@ -9,7 +9,7 @@ const DARK_MODE = 'dark';
 const LIGHT_MODE = 'light';
 
 // Images Mode - change the images mode sorce (light to dark):
-function imageMode(color) {
+function changeImagesMode(color) {
   image1.src = `img/undraw_proud_coder_${color}.svg`;
   image2.src = `img/undraw_feeling_proud_${color}.svg`;
   image3.src = `img/undraw_conceptual_idea_${color}.svg`;
@@ -30,7 +30,7 @@ function toggleLightDarkMode(isDark) {
     ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon')
     : toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
 
-  isDark ? imageMode(DARK_MODE) : imageMode(LIGHT_MODE);
+  isDark ? changeImagesMode(DARK_MODE) : changeImagesMode(LIGHT_MODE);
 }
 
 function switchTheme(event) {
