@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Keeper Visions</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styleMine.css" />
+    <script
+      src="https://kit.fontawesome.com/613807af94.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Visions Bookmarks Keeper</h1>
+      <!-- Open/Hide Modal  -->
+      <h2 id="show-modal">Add Bookmark</h2>
+    </header>
+    <main>
+      <!-- Bookmarks -->
+      <div class="container" id="bookmarks-container"></div>
+
+      <!-- Modal -->
+      <div class="modal-container" id="modal">
+        <div class="modal">
+          <i class="fa-solid fa-circle-xmark" id="close-modal"></i>
+
+          <div class="modal-header">
+            <h3>Add Bookmark</h3>
+          </div>
+
+          <div class="modal-content">
+            <form id="bookmark-form">
+              <div class="form-group">
+                <label for="website-name" class="form-label"
+                  >Website Name</label
+                >
+                <input type="text" class="form-input" id="website-name" />
+              </div>
+
+              <div class="form-group">
+                <label for="website-url" class="form-label">Website URL</label>
+                <input type="text" class="form-input" id="website-url" />
+              </div>
+              <button type="submit">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="p-footer">
+        Visions Bookmarks Keeper project is inspired by <strong>ZTM</strong> JS
+        Web Projects Course
+        <a href="https://zerotomastery.io/courses/javascript-projects/">link</a>
+      </p>
+    </footer>
+  </body>
+</html>
