@@ -2,8 +2,9 @@
 
 :root {
   --primary-color: #000046;
-  --border-radius: 7px;
+  --border-radius: 15px;
   --background-color: rgba(0, 0, 0, 0.5);
+  --color: white;
 }
 
 html {
@@ -14,39 +15,42 @@ body {
   position: relative;
   min-height: 100vh;
   margin: 0;
-  /* Background gradient from: https://uigradients.com/#VisionsofGrandeur */
-  background: #000046; /* fallback for old browsers */
+  /* https://uigradients.com/#KimobyIsTheNewBlue */
+
+  background: #396afc; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to top,
-    #1cb5e0,
-    #000046
+    to right,
+    #2948ff,
+    #396afc
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to top,
-    #1cb5e0,
-    #000046
+    to right,
+    #2948ff,
+    #396afc
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
-  color: azure;
+  color: var(--color);
   text-align: center;
   margin: 20px;
   letter-spacing: 2px;
 }
 
 h2 {
-  color: azure;
+  color: var(--color);
   background-color: var(--background-color);
   border-radius: var(--border-radius);
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
-  width: 245px;
+  width: 260px;
   margin: 20px auto 10px;
   padding: 10px;
   user-select: none;
+  letter-spacing: 1px;
 }
 
 h2:hover {
@@ -57,30 +61,23 @@ h2:hover {
 .container {
   display: flex;
   flex-direction: row;
-  flex-grow: wrap;
+  flex-wrap: wrap;
 }
 
 .item {
   background-color: var(--background-color);
-  color: azure;
+  color: var(--color);
   margin: 10px;
   padding: 20px;
-  border-radius: var(--border-radius);
 }
 
 .item:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-a {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 a:link,
 a:visited {
-  color: white;
+  color: var(--color);
   text-decoration: none;
 }
 
@@ -109,7 +106,7 @@ a:active {
 
 .modal-container {
   background-color: var(--background-color);
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -127,18 +124,71 @@ a:active {
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   max-width: 95%;
-  width: 500px;
-  animation: modalopen 2s;
+  width: 480px;
+  animation: modalopen 1s;
 }
 
 .fa-circle-xmark {
   float: right;
-  color: azure;
+  color: var(--color);
   font-size: 24px;
   position: relative;
-  top: 13px;
-  right: 13px;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
+}
+
+.modal-header {
+  background-color: var(--primary-color);
+  color: var(--color);
+  padding: 20px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.modal-content {
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+.form-group {
+  height: 55px;
+}
+
+.form-label {
+  color: var(--primary-color);
+  display: block;
+}
+
+.form-input {
+  width: 97%;
+  padding: 5px;
+  border: 2px solid var(--primary-color);
+  display: block;
+  outline: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--color);
+  cursor: pointer;
+  height: 35px;
+  width: 90px;
+  border: none;
+  border-radius: var(--border-radius);
+  margin-top: 10px;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:focus {
+  outline: none;
 }
 
 /* Footer */
@@ -155,7 +205,24 @@ a:active {
 }
 
 .p-footer a {
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
   color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Keyframes */
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 }
