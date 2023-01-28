@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  color: rgb(47, 47, 47);
+  font-family: 'Inter', sans-serif;
+}
+
+.calculator {
+  background-color: whitesmoke;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.calculator-display {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+  color: rgb(47, 47, 47);
+  font-weight: 400;
+}
+
+.calculator-display h2 {
+  margin: 0;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  min-height: 40px;
+  font-size: 1.2em;
+  font-weight: 100;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+#clear-btn {
+  background-color: lightcoral;
+}
+
+.equal {
+  grid-column: 3 / 5;
+  font-weight: 700;
+  background-color: lightgreen;
+  text-align: center;
+}
+
+@media screen and(max-width: 600px) {
+  .calculator {
+    width: 95%;
+  }
+}
