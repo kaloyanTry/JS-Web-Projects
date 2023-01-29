@@ -50,6 +50,7 @@ class Calculator {
       default:
         return;
     }
+    
     this.currOperand = computation;
     this.operation = undefined;
     this.prevOperand = '';
@@ -60,6 +61,7 @@ class Calculator {
     const integerDigits = parseFloat(stringNumber.split('.')[0]);
     const decimalDigits = stringNumber.split('.')[1];
     let integerDisplay;
+    
     if (isNaN(integerDigits)) {
       integerDisplay = '';
     } else {
@@ -67,6 +69,7 @@ class Calculator {
         maximumFractionDigits: 0,
       });
     }
+    
     if (decimalDigits != null) {
       return `${integerDisplay}.${decimalDigits}`;
     } else {
@@ -78,6 +81,7 @@ class Calculator {
     this.currOperandTextEl.textContent = this.getDisplayNumber(
       this.currOperand
     );
+    
     if (this.operation != null) {
       this.prevOperandTextEl.textContent = `${this.getDisplayNumber(
         this.prevOperand
